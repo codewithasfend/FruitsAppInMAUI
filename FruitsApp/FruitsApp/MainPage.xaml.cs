@@ -33,7 +33,9 @@ public partial class MainPage : ContentPage
     private void LvFruits_ItemSelected(object sender, SelectedItemChangedEventArgs e)
     {
         var selecteditem = e.SelectedItem as Fruit;
+        if(selecteditem==null) return;
         Navigation.PushAsync(new FruitDetailPage(selecteditem));
+        ((ListView)sender).SelectedItem=null;
     }
 }
 

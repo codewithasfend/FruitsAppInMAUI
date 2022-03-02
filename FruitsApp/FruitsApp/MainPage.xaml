@@ -4,8 +4,6 @@
              BackgroundColor="{DynamicResource SecondaryColor}"
              NavigationPage.HasNavigationBar="False">
 
-
-    <StackLayout>
         <ListView x:Name="LvFruits" HasUnevenRows="True" ItemSelected="LvFruits_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -18,8 +16,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-    </StackLayout>
    
-
 
 </ContentPage>
